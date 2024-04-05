@@ -1,0 +1,17 @@
+.cart-button {
+  position: relative;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary);
+}
+
+.cart-button .bdge {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--main);
+  color: #fff;
+}

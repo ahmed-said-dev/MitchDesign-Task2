@@ -1,0 +1,24 @@
+.categories-list {
+  gap: 12px;
+  margin-bottom: 2rem;
+  overflow: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+}
+
+.categories-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.categories-list::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+.categories-list::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+}
+
+.categories-list::-webkit-scrollbar-track,
+.categories-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}

@@ -1,0 +1,158 @@
+*:root {
+  --main: #163300;
+  --main-dark: #122900;
+  --main-light: #185039;
+  --secondary: #edc843;
+  --color-light: #edefeb;
+  --color-light-hover: #dedede;
+  --border-color-500: #868685;
+  --rounded: 100px;
+  --trans: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  direction: rtl;
+  text-transform: capitalize;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  caret-color: var(--main);
+}
+
+img {
+  max-width: 100%;
+  user-select: none;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--trans);
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active,
+button:disabled:focus {
+  color: rgb(192, 192, 192);
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--rounded);
+  color: var(--main);
+}
+
+.btn svg {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.light-bg {
+  background-color: var(--color-light);
+}
+
+.light-bg:hover {
+  background-color: var(--color-light-hover);
+}
+
+.outlined-btn {
+  background-color: #fff;
+  border: 2px solid var(--border-color-500);
+  border-radius: var(--rounded);
+}
+
+.outlined-btn:hover {
+  border-color: var(--main);
+}
+
+.outlined-btn.load-more {
+  width: 110px;
+}
+
+.outlined-btn.zoom-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.circle {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.breadcrumb-item {
+  color: var(--main-light);
+  font-size: 12px;
+}
+
+.css-1apq1da-MuiCardActions-root > :not(style) ~ :not(style) {
+  margin-left: 0 !important;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header > .outlined-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.old-price {
+  position: relative;
+  padding-right: 15px;
+  color: var(--color-light);
+}
+
+.old-price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: calc(100% - 15px);
+  z-index: 1;
+}
+
+.Toastify__toast-container {
+  text-align: right;
+  right: 0 !important;
+}
